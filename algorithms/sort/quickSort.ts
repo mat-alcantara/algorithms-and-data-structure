@@ -21,6 +21,3 @@ const quicksort = (arr: number[], left: number, right: number) => {
   }
 }
 
-
-
-

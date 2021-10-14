@@ -39,3 +39,32 @@ enough.**
 Quando você precisa ordenar os pedidos de uma empresa em ordem decrescente, uma solução aproximada causará muita confusão, portanto é necessário uma solução ideal.
 
 Para gerar um plano de corte seguindo a "Cutting Stock Problem', pode ser difícil obter a solução ideal, portanto a solução mais próxima do desperdício mínimo possível já seria útil.
+
+## 1.2 - Algorithms as a technology
+
+### Eficiencia
+
+Algoritmos podem demonstrar diferentes eficiencias de acordo com o problema apresentado. No livro, é mencionado sobre como o **insertion sort** é mais rápido do que o **merge sort** quando se trata de ordenar arrays pequenas, mas em um certo momento, o **merge sort** se torna extremamente mais eficiente.
+
+Em um dos exemplos apresentados, é feito um cálculo com um computador A 1000 vezes mais rápido do que um computador B, porém ao ordenar uma array de 10 milhões de itens, com o computador A utilizando o **insertion sort** e o computador B utilizando o **merge sort**, o computador B foi 17 vezes mais rápido do que o computador A.
+
+### Exercícios
+
+**1.2-1: Give an example of an application that requires algorithmic content at the applica-
+tion level, and discuss the function of the algorithms involved.**
+
+Uma aplicação para a criação de um plano de corte, por exemplo, requer um algoritmo que ajude a resolver o problema do "Cutting Stock Problem" de maneira eficiente. Como não existe uma responsta correta, os algoritmos buscam aproximar o máximo possível na solução do problema, tentando calcular a melhor possibilidade que tenha o mínimo desperdício. E como existem milhões de formas diferentes de se montar um plano de cortes, o algoritmo também influencia na velocidade na qual será calculado.
+
+**1.2-2: Suppose we are comparing implementations of insertion sort and merge sort on the
+same machine. For inputs of size n, insertion sort runs in 8n 2 steps, while merge
+sort runs in 64n lg n steps. For which values of n does insertion sort beat merge
+sort?**
+
+Calcular 8n^2 < 64n lgn
+n = 44
+
+**1.2-3: What is the smallest value of n such that an algorithm whose running time is 100n 2
+runs faster than an algorithm whose running time is 2 n on the same machine**
+
+Calcular 100^n < 2^n
+n = 15
